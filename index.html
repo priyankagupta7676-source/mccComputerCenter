@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Micro Computer Center - Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("image.jfif");
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+    .icon-box {
+      font-size: 40px;
+      color: #0d6efd;
+    }
+    .btn-gradient {
+      background: linear-gradient(90deg, #0066ff, #00ccff);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .btn-gradient:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      background: linear-gradient(90deg, #0052cc, #00b3ff);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><img class="w-25" src="MCC.png" alt="Micro computer center"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero text-white text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Best Computer <span style="color:#0066ff"> Training Institute</span></h1>
+    <h3 style="font-weight: bold;">Micro Computer Center</h3>
+    <p class="lead mt-3">Learn Web Development, MS-Office, Accounting & More</p>
+    <a href="#courses" class="btn btn-gradient btn-lg mt-4 d-inline-flex align-items-center px-4 py-3 fw-bold">
+  <span>View Courses</span>
+  <i class="bi bi-arrow-right ms-2"></i>
+</a>
+  </div>
+</section>
+
+<!-- COURSES -->
+<!-- COURSES -->
+<section id="courses" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-center mb-5 fw-bold">Our Popular Courses</h2>
+      <p class="text-muted">Industry-focused courses designed for practical learning</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Web Development -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="fs-1 mb-3">💻</div>
+            <h5 class="card-title fw-bold">Web Development</h5>
+            <p class="text-muted small">
+              HTML, CSS, C, C++, Java, Bootstrap,  Visual Basic, Foxpro
+            </p>
+            <p class="small">
+              Learn to build responsive websites and work on real-world projects.
+            </p>
+            <a href="#" data-bs-toggle="modal"
+   data-bs-target="#webDevModal" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MS Office -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="fs-1 mb-3">📊</div>
+            <h5 class="card-title fw-bold">MS Office</h5>
+            <p class="text-muted small">
+              Word, Excel, PowerPoint, Access
+            </p>
+            <p class="small">
+              Master essential office tools for professional and academic use.
+            </p>
+            <a href="#" data-bs-toggle="modal"
+   data-bs-target="#msofficeModal" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="fs-1 mb-3">📘</div>
+            <h5 class="card-title fw-bold">Accounting & Typing</h5>
+            <p class="text-muted small">
+              Tally, GST Basics , Typing - English, Hindi, Punjabi with Punjabi steno.
+            </p>
+            <p class="small">
+              Learn accounting principles and practical bookkeeping skills.
+            </p>
+            <a href="#" data-bs-toggle="modal"
+   data-bs-target="#accountModal" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic Design -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="fs-1 mb-3">🎨</div>
+            <h5 class="card-title fw-bold">Graphic Design</h5>
+            <p class="text-muted small">
+              Photoshop, Figma, Adobe XD, Flash
+            </p>
+            <p class="small">
+              Create professional designs for web and digital platforms.
+            </p>
+            <a href="#" data-bs-toggle="modal"
+   data-bs-target="#designModal" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY US -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Why Choose Us</h2>
+    <div class="row text-center">
+        <p>Micro Computer Center is a trusted institute providing high-quality computer education and practical training. We offer industry-oriented courses designed to build strong technical skills and prepare students for real-world careers. Our focus is on hands-on learning, expert guidance, and continuous skill development.Our mission is to empower students with practical computer skills and up-to-date technology knowledge, helping them achieve career growth and confidence in the digital world.</p>
+    </div>
+   <section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-md-4">
+        <div class="feature-card h-100 p-4 shadow-sm rounded">
+          <div class="icon-box mb-3">🎓</div>
+          <h5 class="fw-semibold">Expert Trainers</h5>
+          <p class="text-muted mb-0">
+            Learn from industry-experienced instructors with real-world expertise.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card h-100 p-4 shadow-sm rounded">
+          <div class="icon-box mb-3">💻</div>
+          <h5 class="fw-semibold">Practical Learning</h5>
+          <p class="text-muted mb-0">
+            Gain hands-on experience through live projects and practical training.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card h-100 p-4 shadow-sm rounded">
+          <div class="icon-box mb-3">🏆</div>
+          <h5 class="fw-semibold">Placement Support</h5>
+          <p class="text-muted mb-0">
+            Career guidance, interview preparation, and placement assistance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-primary text-white py-5">
+  <div class="container">
+    <div class="row text-center g-4">
+      <!-- Students -->
+      <div class="col-md-3">
+        <div class="p-4 rounded shadow-sm bg-primary">
+          <div class="mb-2 display-4 fw-bold">5000+</div>
+          <div class="fs-5">
+            <i class="bi bi-people-fill me-2"></i> Students
+          </div>
+        </div>
+      </div>
+      <!-- Courses -->
+      <div class="col-md-3">
+        <div class="p-4 rounded shadow-sm bg-primary">
+          <div class="mb-2 display-4 fw-bold">40+</div>
+          <div class="fs-5">
+            <i class="bi bi-journal-bookmark-fill me-2"></i> Courses
+          </div>
+        </div>
+      </div>
+      <!-- Experience -->
+      <div class="col-md-3">
+        <div class="p-4 rounded shadow-sm bg-primary">
+          <div class="mb-2 display-4 fw-bold">30+</div>
+          <div class="fs-5">
+            <i class="bi bi-award-fill me-2"></i> Years Experience
+          </div>
+        </div>
+      </div>
+      <!-- Practical Training -->
+      <div class="col-md-3">
+        <div class="p-4 rounded shadow-sm bg-primary">
+          <div class="mb-2 display-4 fw-bold">100%</div>
+          <div class="fs-5">
+            <i class="bi bi-tools me-2"></i> Practical Training
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<!-- <section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="mx-auto" style="max-width:600px" action="https://api.web3forms.com/submit" method="POST">
+       <input type="hidden" name="access_key" value="d2f05a47-8099-4798-abe9-1a3449d9d28d">
+      <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+      </div>
+      <div class="mb-3">
+        <label>Phone</label>
+        <input type="phone" name="phone" class="form-control" placeholder="Phone Number" required>
+      </div>
+      <div class="mb-3">
+        <label>Message</label>
+        <textarea class="form-control" rows="4" placeholder="Message" name="message" required></textarea>
+        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+      </div>
+      <button class="btn btn-primary w-100" type="submit">Send Message</button>
+    </form>
+  </div>
+</section> -->
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="text-muted">
+            Have questions? Get in touch with us and we’ll respond shortly.
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row text-center mb-4">
+          <div class="col-md-6 mb-3">
+            <div class="d-flex flex-column align-items-center">
+              <i class="bi bi-geo-alt-fill fs-3 mb-2 text-primary"></i>
+              <h6 class="fw-bold">Address</h6>
+              <p class="mb-0">MCC Compter Center, Main Bazaar Kurali, Near Krishna Mandi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="d-flex flex-column align-items-center">
+              <i class="bi bi-telephone-fill fs-3 mb-2 text-primary"></i>
+              <h6 class="fw-bold">Phone</h6>
+              <p class="mb-0">+91 98159 10176 <br> +91 95015 10176</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Info -->
+
+        <div class="card shadow border-0">
+          <div class="card-body p-4 p-md-5">
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="eeb24c43-aeec-42b7-a50b-871ccd23ca35">
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Full Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Email Address</label>
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Phone Number</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Course Interested In</label>
+                  <select name="course" class="form-select" required>
+                    <option selected disabled>Select course</option>
+                    <option>Web Development</option>
+                    <option>MS Office</option>
+                    <option>Accounting & Typing</option>
+                    <option>Graphic Design</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Message</label>
+                  <textarea name="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+                    Send Message
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>Empowering skills for a digital future through quality computer education—learn, practice, and succeed in your tech career.</p>
+  <p class="mb-0 opacity-50">©  <span id="year"></span> Micro Computer Center Institute | All Rights Reserved</p>
+</footer>
+
+<!-- Web Development Modal -->
+<div class="modal fade" id="webDevModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Web Development Course</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <h6>Course Overview</h6>
+        <p>
+          This course covers modern web development technologies and real-world project experience.
+        </p>
+
+        <h6>Technologies Covered</h6>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>C, C++</li>
+          <li>Java</li>
+          <li>Bootstrap</li>
+          <li>Basic Git</li>
+          <li>Basic</li>
+          <li>Visual Basic</li>
+          <li>Foxpro</li>
+        </ul>
+
+        <h6>Key Benefits</h6>
+        <ul>
+          <li>Hands-on practical training</li>
+          <li>Live project work</li>
+          <li>Certificate after completion</li>
+          <li>Career guidance</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn btn-primary" id="enrollBtn">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MS Office Modal -->
+<div class="modal fade" id="msofficeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">MS Office</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <h6>Course Overview</h6>
+        <p>
+          Master essential office tools for professional and academic use.
+        </p>
+
+        <h6>Technologies Covered</h6>
+        <ul>
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>Microsoft PowerPoint</li>
+          <li>Access</li>
+        </ul>
+
+        <h6>Key Benefits</h6>
+        <ul>
+          <li>Hands-on practical training</li>
+          <li>Detailed Training</li>
+          <li>Certificate after completion</li>
+          <li>Career guidance</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn btn-primary" id="enrollBtn1">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Account Modal -->
+<div class="modal fade" id="accountModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Accounting & Typing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <h6>Course Overview</h6>
+        <p>
+          Master essential office tools for professional and academic use.
+        </p>
+
+        <h6>Technologies Covered</h6>
+        <ul>
+          <li>Tally</li>
+          <li>GST Basics</li>
+          <li>Typing - English</li>
+          <li>Typing - Hindi</li>
+          <li>Typing - Punjabi</li>
+          <li>Punjabi Steno</li>
+        </ul>
+
+        <h6>Key Benefits</h6>
+        <ul>
+          <li>Hands-on practical training</li>
+          <li>Detailed Training</li>
+          <li>Certificate after completion</li>
+          <li>Career guidance</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn btn-primary" id="enrollBtn2">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Design Modal -->
+<div class="modal fade" id="designModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Graphic Design</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <h6>Course Overview</h6>
+        <p>
+          Create professional designs for web and digital platforms.
+        </p>
+
+        <h6>Technologies Covered</h6>
+        <ul>
+          <li>Photoshop</li>
+          <li>Figma</li>
+          <li>Adobe XD</li>
+          <li>Flash</li>
+        </ul>
+
+        <h6>Key Benefits</h6>
+        <ul>
+          <li>Hands-on practical training</li>
+          <li>Detailed Training</li>
+          <li>Certificate after completion</li>
+          <li>Career guidance</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn btn-primary" id="enrollBtn3">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+  document.getElementById('enrollBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Close modal
+    const modalElement = document.querySelector('.modal.show');
+    const modalInstance = bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    // Scroll after modal closes
+    modalElement.addEventListener('hidden.bs.modal', function () {
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    }, { once: true });
+  });
+</script>
+<script>
+  document.getElementById('enrollBtn1').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Close modal
+    const modalElement = document.querySelector('.modal.show');
+    const modalInstance = bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    // Scroll after modal closes
+    modalElement.addEventListener('hidden.bs.modal', function () {
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    }, { once: true });
+  });
+</script>
+<script>
+  document.getElementById('enrollBtn2').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Close modal
+    const modalElement = document.querySelector('.modal.show');
+    const modalInstance = bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    // Scroll after modal closes
+    modalElement.addEventListener('hidden.bs.modal', function () {
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    }, { once: true });
+  });
+</script>
+<script>
+  document.getElementById('enrollBtn3').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Close modal
+    const modalElement = document.querySelector('.modal.show');
+    const modalInstance = bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    // Scroll after modal closes
+    modalElement.addEventListener('hidden.bs.modal', function () {
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    }, { once: true });
+  });
+</script>
+</body>
+</html>
